@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" type="image/ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="module" src="/src/main.js" defer></script>
+</head>
+<body class="light-theme">
+  <header class="header">
+    <h1 class="title">Currency Converter</h1>
+    <button class="toggle-theme" aria-label="Toggle Theme">🌙</button>
+  </header>
+
+    <div class="general-column">
+      <div class="row">
+        <div class="column">
+          <main class="converter">
+            <h2>Converter</h2>
+            <form class="form">
+              <div class="form-group">
+                <label for="from">From:</label>
+                <select class="currency-select from-currency"></select>
+              </div>
+
+              <div class="form-group">
+                <label for="to">To:</label>
+                <select class="currency-select to-currency"></select>
+              </div>
+
+              <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" class="amount-input" min="0" step="any" value="1" required />
+              </div>
+
+              <button type="submit" class="convert-button">Convert</button>
+            </form>
+
+            <section class="result">
+              <p class="conversion-output">Result will appear here.</p>
+            </section>
+          </main>
+
+          <section class="reverse-converter">
+            <h2>Reverse Converter</h2>
+            <form class="reverse-form">
+              <input type="number" class="reverse-amount" placeholder="I want to receive..." />
+              <span class="reverse-result">Result will appear here.</span>
+            </form>
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="popular-rates">
+            <h2>Popular Currency Rates</h2>
+            <div class="rates-table"></div>
+          </section>
+          
+          <section class="historical-chart">
+            <h2>EUR to USD - 7 Day Trend</h2>
+            <canvas class="trend-chart"></canvas>
+          </section>
+        </div>
+      </div>
+
+      <section class="quote-block">
+        <blockquote class="quote">“Money is a terrible master but an excellent servant.”</blockquote>
+      </section>
+    </div>
+
+<!--<footer class="footer">
+    Powered by <a href="https://www.frankfurter.app/" target="_blank" rel="noopener">Frankfurter API</a>
+  </footer> -->
+</body>
+</html>
