@@ -114,7 +114,7 @@ form.addEventListener('submit', async (e) => {
 toggleTheme.addEventListener('click', () => {
   const isDark = body.classList.contains('dark-theme');
   body.classList.toggle('dark-theme');
-  toggleTheme.textContent = isDark ? '☀️' : '🌙';
+  toggleTheme.textContent = !isDark ? '☀️' : '🌙';
   if (historicalChartInstance) {
     const textColor = !isDark ? "#f0f0f0" : "#121212";
     const gridColor = !isDark ? "rgba(240,240,240,0.1)" : "rgba(18,18,18,0.1)";
