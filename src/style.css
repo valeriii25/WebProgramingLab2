@@ -36,7 +36,7 @@ body.dark-theme {
   height: 100%;
   align-items: stretch;
   width: fit-content;   
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .column {
@@ -50,8 +50,7 @@ body.dark-theme {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1rem;
   min-height: 100%;
 }
 
@@ -68,7 +67,7 @@ body.dark-theme {
 }
 
 .converter {
-  width: 600px;
+  width: 500px;
   padding: 1rem;
   background: var(--card-bg);
   border-radius: 16px;
@@ -108,9 +107,13 @@ body.dark-theme {
 }
 
 .result {
-  margin-top: 1.5rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.conversion-output {
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -120,7 +123,7 @@ body.dark-theme {
 }
 
 .popular-rates, .historical-chart, .reverse-converter {
-  width: 600px;
+  width: 500px;
   padding: 1rem;
   background: var(--card-bg);
   border-radius: 16px;
@@ -180,8 +183,6 @@ body.dark-theme {
 
 .reverse-result {
   font-weight: bold;
-  margin-top: 19.2px;
-  margin-bottom: 19.2px;
   font-size: 1.2rem;
 }
 
